@@ -1,8 +1,7 @@
-import java.util.*;
+import service.InvestasiApp;
 
-// Kelas induk untuk Saham dan SBN
-abstract class Investasi {
-    String nama;
-
-    // Constructor untuk inisialisasi objek Investasi
- 
+public class Main {
+    public static void main(String[] args) {
+        InvestasiApp.main(args);
+    }
+}

@@ -1,1 +1,11 @@
+package model;
 
+public abstract class Investasi {
+    public String nama;
+
+    public Investasi(String nama) {
+        this.nama = nama;
+    }
+
+    public abstract void tampilDetail();
+}

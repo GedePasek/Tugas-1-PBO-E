@@ -1,1 +1,22 @@
+package model;
+
+public class SBN extends Investasi {
+    public double bunga;
+    public int jangkaWaktu;
+    public String tanggalJatuhTempo;
+    public double kuotaNasional;
+
+    public SBN(String nama, double bunga, int jangkaWaktu, String tanggalJatuhTempo, double kuotaNasional) {
+        super(nama);
+        this.bunga = bunga;
+        this.jangkaWaktu = jangkaWaktu;
+        this.tanggalJatuhTempo = tanggalJatuhTempo;
+        this.kuotaNasional = kuotaNasional;
+    }
+
+    @Override
+    public void tampilDetail() {
+        System.out.printf("SBN %s | Bunga: %.2f%% | Kuota: Rp %.2f | Jatuh Tempo: %s\n", nama, bunga, kuotaNasional, tanggalJatuhTempo);
+    }
+}
 

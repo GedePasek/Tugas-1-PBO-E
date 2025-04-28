@@ -1,1 +1,18 @@
+package model;
+
+public class Saham extends Investasi {
+    public String kode;
+    public double harga;
+
+    public Saham(String kode, String nama, double harga) {
+        super(nama);
+        this.kode = kode;
+        this.harga = harga;
+    }
+
+    @Override
+    public void tampilDetail() {
+        System.out.printf("Saham %s - %s | Harga: Rp %.2f\n", kode, nama, harga);
+    }
+}
 

@@ -1,1 +1,15 @@
+package model;
 
+import java.util.HashMap;
+import java.util.Map;
+
+public class Customer {
+    public String username;
+    public Map<String, Integer> sahamDimiliki = new HashMap<>();
+    public Map<String, Double> nominalSaham = new HashMap<>();
+    public Map<String, Double> sbnDimiliki = new HashMap<>();
+
+    public Customer(String username) {
+        this.username = username;
+    }
+}

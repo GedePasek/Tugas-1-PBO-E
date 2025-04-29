@@ -55,7 +55,7 @@ public class InvestasiApp {
         }
     }
 
-    // ========================= ADMIN MENU =========================
+    
     static void adminMenu() {
         while (true) {
             System.out.println("\n== MENU ADMIN ==\n1. Saham\n2. SBN\n3. Lihat Daftar Investasi\n4. Logout");
@@ -233,7 +233,7 @@ public class InvestasiApp {
         }
     }
 
-    // ========================= CUSTOMER MENU =========================
+    
     static void customerMenu(Customer user) {
         while (true) {
             System.out.println("\n== MENU CUSTOMER ==\n1. Beli Investasi\n2. Portofolio\n3. Logout");

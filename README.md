@@ -51,3 +51,5 @@ Kode kami terdapat 2 role yang tersedia, yaitu **Admin** dan **User**.
 Gambar diatas merupakan **tampilan awal** saat kode program dijalankan. terdapat 2 opsi yaitu, **Login** dan **Keluar**.
 
 ---
+
+<img src="gambar/tampilanKeluar.jpg" width="500">

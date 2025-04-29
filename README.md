@@ -50,6 +50,13 @@ Kode kami terdapat 2 role yang tersedia, yaitu **Admin** dan **User**.
  
 Gambar diatas merupakan **tampilan awal** saat kode program dijalankan. terdapat 2 opsi yaitu, **Login** dan **Keluar**.
 
----
 
 <img src="gambar/tampilanKeluar.jpg" width="500">
+
+Gambar di atas merupakan tampilan kelar ketika pengguna memilih opsi keluar(0).
+
+---
+
+<img src="gambar/loginAdminGagal.jpg" width="500">
+
+Gambar di atas merupakan tampialn login sebagai admin. Jika menginput username atau password yang salah maka akan ada pesan seperti gambar di atas dan akan otomatis kembali ke menu login. Jika password dan username sudah benar, maka program akan berjalan ke tampilan selanjutnya.

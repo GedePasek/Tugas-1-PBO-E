@@ -74,7 +74,7 @@ Gambar di atas merupakan tampilan ketika kita memilih opsi **Saham** pada **Menu
 
 Gambar di atas merupakan tampilan ketika pengguna menginput opsi 2 pada **Menu Saham** yaitu mengubah harga saham yang tersedia. Pengguna akan memasukkan kode saham yang sesuai dengan saham yang tersedia lalu mengubah harganya. Jika pengguna salah memasukkan kode saham, maka akan muncul peringatan **Kode Saham Tidak Ditemukan** dan akan kembali ke tampilan untuk mengubah harga saham. 
 
-<img src="gambar/hapusSaham.jpg" width="500">
+<img src="gambar/hapusSaham.jpg" width="500"> <img src="gambar/kodeSahamSalah.jpg" width="500">
 
 Gambar di atas merupakan tampilan ketika pengguna memilih opsi 3 di **Menu Saham**. Pengguna bisa menghapus saham yang tersedia dan ketika kode yang dimasukkan tidak ada di daftar sahamnya, maka akan muncul peringatan **Kode Saham Tidak Ditemukan** dan program akan otomatis kembali ke **Menu Saham**.
 
@@ -94,4 +94,10 @@ Gambar di atas merupakan tampilan Daftar Investasi yang tersedia jika pengguna (
 
 Gambar di atas merupakan tampilan User Login serta Menu Customer. Pada Menu Customer terdapat 3 opsi, yaitu **Beli Investasi**, **Portofolio**, dan **Logout**. Masukkan opsi 1 jika pengguna ingin membeli investasi dan akan muncul tampilan menu **Pilih Jenis Investasi**.
 
+<img src="gambar/beliSaham.jpg" width="500"> <img src="gambar/validasiBeliSaham.jpg" width="500">
 
+Gambar di atas merupakan tampilan jika pengguna memilih opsi 1 untuk membeli saham. Daftar saham akan muncul dan pengguna akan memasukkan kode saham yang ingin dibeli. Jika kode yang dimasukkan tidak ada, maka akan muncul pesan dan program akan meminta pengguna untuk mengisi ulang kode saham yang terdaftar.
+
+<img src="gambar/prosesBeliSBN.jpg" width="500">
+
+Gambar di atas merupakan tampilan jika pengguna memilih opsi 2 untuk membeli SBN. 

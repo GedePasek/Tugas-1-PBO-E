@@ -72,4 +72,4 @@ Gambar di atas merupakan tampilan ketika kita memilih opsi **Saham** pada **Menu
 <img src="gambar/ubaHargaSaham.jpg" width="500"> <img src="gambar/validasiUbahHargaSaham.jpg" width="500">
 
 
-Gambar di atas merupakan tampilan ketika pengguna menginput opsi 2 pada **Menu Saham** yaitu mengubah harga saham yang tersedia. Pengguna akan memasukkan kode saham yang sesuai dengan saham yang tersedia lalu mengubah harganya. Jika pengguna salah memasukkan kode saham, maka akan muncul peringatan **Kode Saham Tidak Ditemukan**. 
+Gambar di atas merupakan tampilan ketika pengguna menginput opsi 2 pada **Menu Saham** yaitu mengubah harga saham yang tersedia. Pengguna akan memasukkan kode saham yang sesuai dengan saham yang tersedia lalu mengubah harganya. Jika pengguna salah memasukkan kode saham, maka akan muncul peringatan **Kode Saham Tidak Ditemukan** dan akan kembali ke tampilan untuk mengubah harga saham. 

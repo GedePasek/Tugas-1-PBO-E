@@ -88,13 +88,13 @@ Gambar di atas merupakan tampilan Menu SBN. Terdapat 3 opsi pada menu tersebut, 
 
 <img src="gambar/hapusSBN.jpg" width="500">
 
-Gambar di atas merupakan tampilan jika pengguna memilih opsi 2 untuk **menghapus SBN**. Ketika pengguna salah memasukkan nama SBN, maka akan muncul peringatan **Nama SBN tidak ditemukan.**.
+Gambar di atas merupakan tampilan jika pengguna memilih opsi 2 untuk **menghapus SBN**. Ketika pengguna salah memasukkan nama SBN, maka akan muncul peringatan "**Nama SBN tidak ditemukan.**".
 
 ---
 ### 5. Daftar Investasi
 <img src="gambar/DaftarInvestasi.jpg" width="500"> <img src="gambar/investasiKosong.jpg" width="500">
 
-Gambar di atas merupakan tampilan Daftar Investasi yang tersedia jika pengguna (admin) memilih opsi 3 pada **Menu Admin**. Jika daftar investasi masih kosong, maka akan muncul pesan **"Belum ada investasi yang tersedia"**.
+Gambar di atas merupakan tampilan Daftar Investasi yang tersedia jika pengguna (admin) memilih opsi 3 pada **Menu Admin**. Jika daftar investasi masih kosong, maka akan muncul pesan "**Belum ada investasi yang tersedia**".
 
 ---
 ### 6. User Login

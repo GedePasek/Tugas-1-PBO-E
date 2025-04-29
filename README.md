@@ -120,3 +120,7 @@ Gambar di atas merupakan tampilan jika pengguna memilih opsi 2 untuk **membeli S
 Gambar di atas merupakan tampilan dari menu **Portofolio** dari user. Disana terlihat saham dan SBN yang telah dibeli oleh pengguna. Pengguna juga dapat melihat sisa kuota SBN yang masih tersedia.
 
 ---
+
+## UML
+
+<img src="gambar/UML_PBO.drawio.png">

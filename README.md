@@ -1,3 +1,29 @@
+# 💼 InvestasiApp - Simulasi Investasi Saham & SBN
 
-<img src="![WhatsApp Image 2025-04-28 at 19 43 52_9e256072](https://github.com/user-attachments/assets/8ec040f3-c3a0-4a11-8d25-b3585964afbc)" alt="coba" height="250"/>
-<img src="gambar/loginUser.jpg" width="150"/>
+InvestasiApp adalah aplikasi berbasis Java console yang memungkinkan pengguna melakukan simulasi investasi dalam bentuk **Saham** dan **Surat Berharga Negara (SBN)**. Aplikasi ini menyediakan dua peran utama: **Admin** dan **Customer**, dengan fitur pengelolaan dan pembelian investasi.
+
+---
+
+## 🧩 Fitur Utama
+
+### 👨‍💼 Admin
+- Tambah, ubah harga, dan hapus **Saham**
+- Tambah dan hapus **SBN**
+- Lihat seluruh daftar investasi yang tersedia
+
+### 👤 Customer
+- Melihat daftar investasi
+- Membeli saham berdasarkan harga dan nominal
+- Membeli SBN selama masih tersedia kuota nasional
+- Melihat portofolio investasi pribadi
+
+---
+
+## 🏁 Cara Menjalankan
+
+1. Pastikan Anda telah menginstal **Java JDK 17 atau lebih baru**
+2. Clone repositori ini:
+
+```bash
+git clone https://github.com/username/InvestasiApp.git
+cd InvestasiApp

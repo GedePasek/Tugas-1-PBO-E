@@ -100,7 +100,7 @@ Gambar di atas merupakan tampilan Daftar Investasi yang tersedia jika pengguna (
 ### 6. User Login
 <img src="gambar/loginUser.jpg" width="500"> <img src="gambar/menuCustomer.jpg" width="500">
 
-Gambar di atas merupakan tampilan User Login serta Menu Customer. Pada Menu Customer terdapat 3 opsi, yaitu **Beli Investasi**, **Portofolio**, dan **Logout**. Masukkan opsi 1 jika pengguna ingin membeli investasi dan akan muncul tampilan menu **Pilih Jenis Investasi**.
+Gambar di atas merupakan tampilan User Login serta Menu Customer. Pada Menu Customer terdapat 3 opsi, yaitu **Beli Investasi**, **Portofolio**, dan **Logout**. Masukkan opsi 1 jika pengguna ingin membeli investasi dan akan muncul tampilan menu **Pilih Jenis Investasi** yang berisi 2 pilihan yaitu **Saham** dan **SBN**.
 
 ---
 ### 7. Beli Saham & SBN
@@ -110,6 +110,6 @@ Gambar di atas merupakan tampilan jika pengguna memilih opsi 1 untuk **membeli s
 
 <img src="gambar/prosesBeliSBN.jpg" width="500">
 
-Gambar di atas merupakan tampilan jika pengguna memilih opsi 2 untuk **membeli SBN**. 
+Gambar di atas merupakan tampilan jika pengguna memilih opsi 2 untuk **membeli SBN**. Jika Penggguna salah memasukkan nama SBN yang tersedia, program akan menampilkan peringatan "**Nama saham atau SBN tidak ditemukan. Silakan coba lagi.**"
 
 ---

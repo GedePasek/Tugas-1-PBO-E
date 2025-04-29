@@ -115,4 +115,8 @@ Gambar di atas merupakan tampilan jika pengguna memilih opsi 2 untuk **membeli S
 ---
 
 ### 8. Portofolio
-<img src="gambar/prosesBeliSBN.jpg" width="500">
+<img src="gambar/Portofolio.jpg" width="500">
+
+Gambar di atas merupakan tampilan dari menu **Portofolio** dari user. Disana terlihat saham dan SBN yang telah dibeli oleh pengguna. Pengguna juga dapat melihat sisa kuota SBN yang masih tersedia.
+
+---

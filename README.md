@@ -108,7 +108,7 @@ Gambar di atas merupakan tampilan User Login serta Menu Customer. Pada Menu Cust
 
 Gambar di atas merupakan tampilan jika pengguna memilih opsi 1 untuk **membeli saham**. Daftar saham akan muncul dan pengguna akan memasukkan kode saham yang ingin dibeli. Jika kode yang dimasukkan tidak ada, maka akan muncul pesan dan program akan meminta pengguna untuk mengisi ulang kode saham yang terdaftar.
 
-<img src="gambar/prosesBeliSBN.jpg" width="500"> <img src="gambar/validasiBeliSBN.jpg" width="500">
+<img src="gambar/prosesBeliSBN.jpg" width="500"> <img src="gambar/validasiBeliSBN.png" width="500">
 
 Gambar di atas merupakan tampilan jika pengguna memilih opsi 2 untuk **membeli SBN**. Jika Penggguna salah memasukkan nama SBN yang tersedia, program akan menampilkan peringatan "**Nama saham atau SBN tidak ditemukan. Silakan coba lagi.**"
 

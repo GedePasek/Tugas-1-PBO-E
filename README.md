@@ -84,17 +84,17 @@ Gambar di atas merupakan tampilan ketika pengguna memilih opsi 3 di **Menu Saham
 ### 4. Menu SBN
 <img src="gambar/tambahSBN.jpg" width="500">
 
-Gambar di atas merupakan tampilan Menu SBN. Terdapat 3 opsi pada menu tersebut, yaitu **Tambah SBN**, **Hapus SBN**, dan **Kembali**. Untuk menambah SBN, pengguna dapat memilih Opsi 1 dan mengisi data-data yang diminta oleh program.
+Gambar di atas merupakan tampilan Menu SBN. Terdapat 3 opsi pada menu tersebut, yaitu **Tambah SBN**, **Hapus SBN**, dan **Kembali**. Untuk menambah SBN, pengguna dapat memilih Opsi 1 dan mengisi data-data yang diminta oleh program. Ketika sudah, program akan otomatis kembali ke **Menu SBN**
 
 <img src="gambar/hapusSBN.jpg" width="500">
 
-Gambar di atas merupakan tampilan jika pengguna memilih opsi 2 untuk **menghapus SBN**. 
+Gambar di atas merupakan tampilan jika pengguna memilih opsi 2 untuk **menghapus SBN**. Ketika pengguna salah memasukkan nama SBN, maka akan muncul peringatan **Nama SBN tidak ditemukan.**.
 
 ---
 ### 5. Daftar Investasi
 <img src="gambar/DaftarInvestasi.jpg" width="500"> <img src="gambar/investasiKosong.jpg" width="500">
 
-Gambar di atas merupakan tampilan Daftar Investasi yang tersedia jika pengguna (admin) memilih opsi 3. Jika daftar investasi masih kosong, maka akan muncul pesan **"Belum ada investasi yang tersedia"**.
+Gambar di atas merupakan tampilan Daftar Investasi yang tersedia jika pengguna (admin) memilih opsi 3 pada **Menu Admin**. Jika daftar investasi masih kosong, maka akan muncul pesan **"Belum ada investasi yang tersedia"**.
 
 ---
 ### 6. User Login

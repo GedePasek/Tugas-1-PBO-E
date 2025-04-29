@@ -1,4 +1,4 @@
-# 💼 InvestasiApp - Simulasi Investasi Saham & SBN
+  # 💼 InvestasiApp - Simulasi Investasi Saham & SBN
 
 InvestasiApp adalah aplikasi berbasis Java console yang memungkinkan pengguna melakukan simulasi investasi dalam bentuk **Saham** dan **Surat Berharga Negara (SBN)**. Aplikasi ini menyediakan dua peran utama: **Admin** dan **Customer**, dengan fitur pengelolaan dan pembelian investasi.
 
@@ -31,15 +31,21 @@ cd InvestasiApp
 
 ---
 
-## Cara Penggunaan Aplikasi
+## 📖Cara Penggunaan Aplikasi
 InvestasiApp dapat dijalankan di **IDE INTELLIJ** dan pastikan kalian menginstal **JDK 11** Atau yang lebih baru.
 
-### Informasi Login
+### ℹ️Informasi Login 
 
 | Role   | Username | Password   |
 |--------|----------|------------|
 | Admin  | admin    | admin123   |
 | User   | user     | user123    |
 
+Kode kami terdapat 2 role yang tersedia, yaitu **Admin** dan **User**. 
+
 ---
-![ArianaGrandeBarbiaminajGIF](https://github.com/user-attachments/assets/c232920d-5c5e-4a8d-be45-0931f980e595)
+
+
+<img src="gambar/loginUser.jpg" width="500">
+ 
+

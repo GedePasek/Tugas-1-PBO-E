@@ -46,6 +46,6 @@ Kode kami terdapat 2 role yang tersedia, yaitu **Admin** dan **User**.
 ---
 
 
-<img src="gambar/loginUser.jpg" width="500">
+<img src="gambar/tampilanAwal.jpg" width="500">
  
 

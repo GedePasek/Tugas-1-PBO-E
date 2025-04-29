@@ -69,6 +69,7 @@ Gambar di atas merupakan contoh jika password dan username benar. Program akan m
 
 Gambar di atas merupakan tampilan ketika kita memilih opsi **Saham** pada **Menu Admin** yang dimana akan memunculkan **Menu Saham**. Disana terdapat **Tambah Saham**, **Ubah Harga Saham**, **Hapus Saham**, dan **Kembali**. Ketika pengguna menginput angka 1, maka program akan lanjut ke opsi **Tambah Saham** untuk menambah saham seperti pada gambar di atas. 
 
-<img src="gambar/ubahHargaSaham.jpg" width="500">
+<img src="gambar/ubaHargaSaham.jpg" width="500"> <img src="gambar/validasiUbahHargaSaham.jpg" width="500">
+
 
 Gambar di atas merupakan tampilan ketika pengguna menginput opsi 2 pada **Menu Saham** yaitu mengubah harga saham yang tersedia. Pengguna akan memasukkan kode saham yang sesuai dengan saham yang tersedia lalu mengubah harganya. Jika pengguna salah memasukkan kode saham, maka akan muncul peringatan **Kode Saham Tidak Ditemukan**. 

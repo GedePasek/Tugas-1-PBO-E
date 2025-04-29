@@ -45,7 +45,7 @@ Kode kami terdapat 2 role yang tersedia, yaitu **Admin** dan **User**.
 
 ---
 
-## 1. Tampilan Awal Program
+### 1. Tampilan Awal Program
 <img src="gambar/tampilanAwal.jpg" width="500">
  
 Gambar diatas merupakan **tampilan awal** saat kode program dijalankan. terdapat 2 opsi yaitu, **Login** dan **Keluar**.
@@ -56,17 +56,17 @@ Gambar diatas merupakan **tampilan awal** saat kode program dijalankan. terdapat
 Gambar di atas merupakan tampilan kelar ketika pengguna memilih opsi keluar(0).
 
 ---
-## 2. Admin Login
+### 2. Admin Login
 <img src="gambar/loginAdminGagal.jpg" width="500">
 
-Gambar di atas merupakan tampialn login sebagai admin. Jika menginput username atau password yang salah maka akan ada pesan seperti gambar di atas dan akan otomatis kembali ke menu login. Jika password dan username sudah benar, maka program akan berjalan ke tampilan selanjutnya.
+Gambar di atas merupakan tampilan login sebagai admin. Jika menginput username atau password yang salah, maka akan ada pesan seperti gambar di atas dan akan otomatis kembali ke menu login. Jika password dan username sudah benar, maka program akan berjalan ke tampilan selanjutnya.
 
 <img src="gambar/tampilanAdminLogin.jpg" width="500">
 
 Gambar di atas merupakan contoh jika password dan username benar. Program akan menampilkan **Menu Admin** yang berisi opsi **Saham**, **SBN**, **Lihat Daftar Investasi**, dan **Logout**. 
 
 ---
-## 3. Menu Saham
+### 3. Menu Saham
 <img src="gambar/tambahSaham.jpg" width="500">
 
 Gambar di atas merupakan tampilan ketika kita memilih opsi **Saham** pada **Menu Admin** yang dimana akan memunculkan **Menu Saham**. Disana terdapat **Tambah Saham**, **Ubah Harga Saham**, **Hapus Saham**, dan **Kembali**. Ketika pengguna menginput angka 1, maka program akan lanjut ke opsi **Tambah Saham** untuk menambah saham seperti pada gambar di atas. 
@@ -81,7 +81,7 @@ Gambar di atas merupakan tampilan ketika pengguna menginput opsi 2 pada **Menu S
 Gambar di atas merupakan tampilan ketika pengguna memilih opsi 3 di **Menu Saham**. Pengguna bisa menghapus saham yang tersedia dan ketika kode yang dimasukkan tidak ada di daftar sahamnya, maka akan muncul peringatan **Kode Saham Tidak Ditemukan** dan program akan otomatis kembali ke **Menu Saham**.
 
 ---
-## 4. Menu SBN
+### 4. Menu SBN
 <img src="gambar/tambahSBN.jpg" width="500">
 
 Gambar di atas merupakan tampilan Menu SBN. Terdapat 3 opsi pada menu tersebut, yaitu **Tambah SBN**, **Hapus SBN**, dan **Kembali**. Untuk menambah SBN, pengguna dapat memilih Opsi 1 dan mengisi data-data yang diminta oleh program.
@@ -91,25 +91,25 @@ Gambar di atas merupakan tampilan Menu SBN. Terdapat 3 opsi pada menu tersebut, 
 Gambar di atas merupakan tampilan jika pengguna memilih opsi 2 untuk **menghapus SBN**. 
 
 ---
-## 5. Daftar Investasi
+### 5. Daftar Investasi
 <img src="gambar/DaftarInvestasi.jpg" width="500"> <img src="gambar/investasiKosong.jpg" width="500">
 
 Gambar di atas merupakan tampilan Daftar Investasi yang tersedia jika pengguna (admin) memilih opsi 3. Jika daftar investasi masih kosong, maka akan muncul pesan **"Belum ada investasi yang tersedia"**.
 
 ---
-## 6. User Login
+### 6. User Login
 <img src="gambar/loginUser.jpg" width="500"> <img src="gambar/menuCustomer.jpg" width="500">
 
 Gambar di atas merupakan tampilan User Login serta Menu Customer. Pada Menu Customer terdapat 3 opsi, yaitu **Beli Investasi**, **Portofolio**, dan **Logout**. Masukkan opsi 1 jika pengguna ingin membeli investasi dan akan muncul tampilan menu **Pilih Jenis Investasi**.
 
 ---
-## 7. Beli Saham & SBN
+### 7. Beli Saham & SBN
 <img src="gambar/beliSaham.jpg" width="500"> <img src="gambar/validasiBeliSaham.jpg" width="500">
 
-Gambar di atas merupakan tampilan jika pengguna memilih opsi 1 untuk membeli saham. Daftar saham akan muncul dan pengguna akan memasukkan kode saham yang ingin dibeli. Jika kode yang dimasukkan tidak ada, maka akan muncul pesan dan program akan meminta pengguna untuk mengisi ulang kode saham yang terdaftar.
+Gambar di atas merupakan tampilan jika pengguna memilih opsi 1 untuk **membeli saham**. Daftar saham akan muncul dan pengguna akan memasukkan kode saham yang ingin dibeli. Jika kode yang dimasukkan tidak ada, maka akan muncul pesan dan program akan meminta pengguna untuk mengisi ulang kode saham yang terdaftar.
 
 <img src="gambar/prosesBeliSBN.jpg" width="500">
 
-Gambar di atas merupakan tampilan jika pengguna memilih opsi 2 untuk membeli SBN. 
+Gambar di atas merupakan tampilan jika pengguna memilih opsi 2 untuk **membeli SBN**. 
 
 ---

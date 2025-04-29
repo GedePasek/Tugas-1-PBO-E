@@ -60,3 +60,11 @@ Gambar di atas merupakan tampilan kelar ketika pengguna memilih opsi keluar(0).
 <img src="gambar/loginAdminGagal.jpg" width="500">
 
 Gambar di atas merupakan tampialn login sebagai admin. Jika menginput username atau password yang salah maka akan ada pesan seperti gambar di atas dan akan otomatis kembali ke menu login. Jika password dan username sudah benar, maka program akan berjalan ke tampilan selanjutnya.
+
+<img src="gambar/tampilanAdminLogin.jpg" width="500">
+
+Gambar di atas merupakan contoh jika password dan username benar. Program akan menampilkan **Menu Admin** yang berisi opsi **Saham**, **SBN**, **Lihat Daftar Investasi**, dan **Logout**. 
+
+<img src="gambar/tambahSaham.jpg" width="500">
+
+Gambar di atas merupakan tampilan ketika kita memilih opsi **Saham** pada **Menu Admin**. Disana terdapat **Tambah Saham**, **Ubah Harga Saham**, **Hapus Saham**, dan **Kembali**. Ketika pengguna menginput angka 1, maka program akan lanjut ke opsi **Tambah Saham** untuk menambah saham seperti pada gambar di atas. 

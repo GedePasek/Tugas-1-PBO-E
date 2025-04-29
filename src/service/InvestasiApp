@@ -15,30 +15,12 @@ public class InvestasiApp {
         pelanggan.put("user", new Customer("user"));
 
         while (true) {
-            System.out.println("   _____      _                       _     _____        _                    ");
-            System.out.println("  / ____|    | |                     | |   |  __ \\      | |                   ");
-            System.out.println(" | (___   ___| | __ _ _ __ ___   __ _| |_  | |  | | __ _| |_ __ _ _ __   __ _ ");
-            System.out.println("  \\___ \\ / _ \\ |/ _` | '_ ` _ \\ / _` | __| | |  | |/ _` | __/ _` | '_ \\ / _` |");
-            System.out.println("  ____) |  __/ | (_| | | | | | | (_| | |_  | |__| | (_| | || (_| | | | | (_| |");
-            System.out.println(" |_____/ \\___|_|\\__,_|_| |_| |_|\\__,_|\\__| |_____/ \\__,_|\\__\\__,_|_| |_|\\__, |");
-            System.out.println("                                                                         __/ |");
-            System.out.println("                                                                        |___/ ");
+            tampilkanHeader();
             System.out.println("\n== MENU AWAL ==\n1. Login\n0. Keluar");
             String pilihan = input.nextLine();
 
             switch (pilihan) {
-                case "1" -> {
-                    System.out.print("Username: ");
-                    String username = input.nextLine();
-                    System.out.print("Password: ");
-                    String password = input.nextLine();
-                    if (akun.containsKey(username) && akun.get(username).equals(password)) {
-                        if (username.equals("admin")) adminMenu();
-                        else customerMenu(pelanggan.get(username));
-                    } else {
-                        System.out.println("Login gagal!");
-                    }
-                }
+                case "1" -> login();
                 case "0" -> {
                     System.out.println("Keluar dari program...");
                     return;
@@ -48,10 +30,37 @@ public class InvestasiApp {
         }
     }
 
+    static void tampilkanHeader() {
+        System.out.println("   _____      _                       _     _____        _                    ");
+        System.out.println("  / ____|    | |                     | |   |  __ \\      | |                   ");
+        System.out.println(" | (___   ___| | __ _ _ __ ___   __ _| |_  | |  | | __ _| |_ __ _ _ __   __ _ ");
+        System.out.println("  \\___ \\ / _ \\ |/ _` | '_ ` _ \\ / _` | __| | |  | |/ _` | __/ _` | '_ \\ / _` |");
+        System.out.println("  ____) |  __/ | (_| | | | | | | (_| | |_  | |__| | (_| | || (_| | | | | (_| |");
+        System.out.println(" |_____/ \\___|_|\\__,_|_| |_| |_|\\__,_|\\__| |_____/ \\__,_|\\__\\__,_|_| |_|\\__, |");
+        System.out.println("                                                                         __/ |");
+        System.out.println("                                                                        |___/ ");
+    }
+
+    static void login() {
+        System.out.print("Username: ");
+        String username = input.nextLine();
+        System.out.print("Password: ");
+        String password = input.nextLine();
+
+        if (akun.containsKey(username) && akun.get(username).equals(password)) {
+            if (username.equals("admin")) adminMenu();
+            else customerMenu(pelanggan.get(username));
+        } else {
+            System.out.println("Login gagal!");
+        }
+    }
+
+    // ========================= ADMIN MENU =========================
     static void adminMenu() {
         while (true) {
             System.out.println("\n== MENU ADMIN ==\n1. Saham\n2. SBN\n3. Lihat Daftar Investasi\n4. Logout");
             String pilihan = input.nextLine();
+
             switch (pilihan) {
                 case "1" -> adminSaham();
                 case "2" -> adminSBN();
@@ -66,156 +75,170 @@ public class InvestasiApp {
         while (true) {
             System.out.println("\n== MENU SAHAM ==\n1. Tambah Saham\n2. Ubah Harga Saham\n3. Hapus Saham\n4. Kembali");
             String pilihan = input.nextLine();
+
             switch (pilihan) {
-                case "1" -> {
-                    System.out.print("Kode: ");
-                    String kode = input.nextLine();
-                    System.out.print("Nama Perusahaan: ");
-                    String nama = input.nextLine();
-                    System.out.print("Harga: ");
-                    double harga = Double.parseDouble(input.nextLine());
-                    listInvestasi.add(new Saham(kode, nama, harga));
-                }
-                case "2" -> {
-                    while (true) {
-                        tampilInvestasi();
-                        System.out.print("Kode Saham yang ingin diubah (atau ketik 0 untuk kembali): ");
-                        String kode = input.nextLine();
-
-                        if (kode.equals("0")) {
-                            break; // keluar dari pengubahan harga
-                        }
-
-                        boolean ditemukan = false;
-                        for (Investasi i : listInvestasi) {
-                            if (i instanceof Saham s && s.kode.equalsIgnoreCase(kode)) {
-                                System.out.print("Harga baru: ");
-                                try {
-                                    double hargaBaru = Double.parseDouble(input.nextLine());
-                                    s.harga = hargaBaru;
-                                    System.out.println("Harga berhasil diubah!");
-                                } catch (NumberFormatException e) {
-                                    System.out.println("Input harga tidak valid. Pastikan angka.");
-                                }
-                                ditemukan = true;
-                                break;
-                            }
-                        }
-
-                        if (!ditemukan) {
-                            System.out.println("Kode saham tidak ditemukan. Silakan coba lagi.");
-                        } else {
-                            break; // selesai kalau sudah berhasil ubah harga
-                        }
-                    }
-                }
-                case "3" -> {
-                    System.out.println("\n== DAFTAR SAHAM ==");
-                    boolean adaSaham = false;
-                    for (Investasi i : listInvestasi) {
-                        if (i instanceof Saham) {
-                            i.tampilDetail();
-                            adaSaham = true;
-                        }
-                    }
-                    if (!adaSaham) {
-                        System.out.println("Belum ada saham yang tersedia.");
-                        continue;
-                    }
-
-                    System.out.print("Kode Saham yang akan dihapus: ");
-                    String kode = input.nextLine();
-
-                    boolean ditemukan = false;
-                    Iterator<Investasi> iterator = listInvestasi.iterator();
-                    while (iterator.hasNext()) {
-                        Investasi i = iterator.next();
-                        if (i instanceof Saham s && s.kode.equals(kode)) {
-                            iterator.remove();
-                            System.out.println("Saham berhasil dihapus.");
-                            ditemukan = true;
-                            break;
-                        }
-                    }
-
-                    if (!ditemukan) {
-                        System.out.println("Kode saham tidak ditemukan.");
-                    }
-                }
+                case "1" -> tambahSaham();
+                case "2" -> ubahHargaSaham();
+                case "3" -> hapusSaham();
                 case "4" -> { return; }
                 default -> System.out.println("Pilihan tidak valid. Silakan pilih 1-4.");
             }
         }
     }
 
-static void adminSBN() {
+    static void tambahSaham() {
+        System.out.print("Kode: ");
+        String kode = input.nextLine();
+        System.out.print("Nama Perusahaan: ");
+        String nama = input.nextLine();
+        System.out.print("Harga: ");
+        double harga = Double.parseDouble(input.nextLine());
+
+        listInvestasi.add(new Saham(kode, nama, harga));
+    }
+
+    static void ubahHargaSaham() {
+        while (true) {
+            tampilInvestasi();
+            System.out.print("Kode Saham yang ingin diubah (atau ketik 0 untuk kembali): ");
+            String kode = input.nextLine();
+
+            if (kode.equals("0")) break;
+
+            boolean ditemukan = false;
+            for (Investasi i : listInvestasi) {
+                if (i instanceof Saham s && s.kode.equalsIgnoreCase(kode)) {
+                    System.out.print("Harga baru: ");
+                    try {
+                        double hargaBaru = Double.parseDouble(input.nextLine());
+                        s.harga = hargaBaru;
+                        System.out.println("Harga berhasil diubah!");
+                    } catch (NumberFormatException e) {
+                        System.out.println("Input harga tidak valid. Pastikan angka.");
+                    }
+                    ditemukan = true;
+                    break;
+                }
+            }
+
+            if (!ditemukan) {
+                System.out.println("Kode saham tidak ditemukan. Silakan coba lagi.");
+            } else {
+                break;
+            }
+        }
+    }
+
+    static void hapusSaham() {
+        System.out.println("\n== DAFTAR SAHAM ==");
+        boolean adaSaham = false;
+
+        for (Investasi i : listInvestasi) {
+            if (i instanceof Saham) {
+                i.tampilDetail();
+                adaSaham = true;
+            }
+        }
+
+        if (!adaSaham) {
+            System.out.println("Belum ada saham yang tersedia.");
+            return;
+        }
+
+        System.out.print("Kode Saham yang akan dihapus: ");
+        String kode = input.nextLine();
+
+        Iterator<Investasi> iterator = listInvestasi.iterator();
+        while (iterator.hasNext()) {
+            Investasi i = iterator.next();
+            if (i instanceof Saham s && s.kode.equalsIgnoreCase(kode)) {
+                iterator.remove();
+                System.out.println("Saham berhasil dihapus.");
+                return;
+            }
+        }
+
+        System.out.println("Kode saham tidak ditemukan.");
+    }
+
+    static void adminSBN() {
         while (true) {
             System.out.println("\n== MENU SBN ==\n1. Tambah SBN\n2. Hapus SBN\n3. Kembali");
             String pilihan = input.nextLine();
+
             switch (pilihan) {
-                case "1" -> {
-                    System.out.print("Nama: ");
-                    String nama = input.nextLine();
-                    System.out.print("Bunga (%): ");
-                    double bunga = Double.parseDouble(input.nextLine());
-                    System.out.print("Jangka Waktu (bulan): ");
-                    int waktu = Integer.parseInt(input.nextLine());
-                    System.out.print("Tanggal Jatuh Tempo: ");
-                    String tjt = input.nextLine();
-                    System.out.print("Kuota Nasional: ");
-                    double kuota = Double.parseDouble(input.nextLine());
-                    listInvestasi.add(new SBN(nama, bunga, waktu, tjt, kuota));
-                }
-                case "2" -> {
-                    System.out.println("\n== DAFTAR SBN ==");
-                    boolean adaSBN = false;
-                    for (Investasi i : listInvestasi) {
-                        if (i instanceof SBN) {
-                            i.tampilDetail();
-                            adaSBN = true;
-                        }
-                    }
-                    if (!adaSBN) {
-                        System.out.println("Belum ada SBN yang tersedia.");
-                        continue;
-                    }
-
-                    System.out.print("Nama SBN yang akan dihapus: ");
-                    String nama = input.nextLine();
-
-                    boolean ditemukan = false;
-                    Iterator<Investasi> iterator = listInvestasi.iterator();
-                    while (iterator.hasNext()) {
-                        Investasi i = iterator.next();
-                        if (i instanceof SBN sbn && sbn.nama.equalsIgnoreCase(nama)) {
-                            iterator.remove();
-                            System.out.println("SBN berhasil dihapus.");
-                            ditemukan = true;
-                            break;
-                        }
-                    }
-
-                    if (!ditemukan) {
-                        System.out.println("Nama SBN tidak ditemukan.");
-                    }
-                }
+                case "1" -> tambahSBN();
+                case "2" -> hapusSBN();
                 case "3" -> { return; }
                 default -> System.out.println("Pilihan tidak valid. Silakan pilih 1-3.");
             }
         }
     }
 
+    static void tambahSBN() {
+        System.out.print("Nama: ");
+        String nama = input.nextLine();
+        System.out.print("Bunga (%): ");
+        double bunga = Double.parseDouble(input.nextLine());
+        System.out.print("Jangka Waktu (bulan): ");
+        int waktu = Integer.parseInt(input.nextLine());
+        System.out.print("Tanggal Jatuh Tempo: ");
+        String tjt = input.nextLine();
+        System.out.print("Kuota Nasional: ");
+        double kuota = Double.parseDouble(input.nextLine());
+
+        listInvestasi.add(new SBN(nama, bunga, waktu, tjt, kuota));
+    }
+
+    static void hapusSBN() {
+        System.out.println("\n== DAFTAR SBN ==");
+        boolean adaSBN = false;
+
+        for (Investasi i : listInvestasi) {
+            if (i instanceof SBN) {
+                i.tampilDetail();
+                adaSBN = true;
+            }
+        }
+
+        if (!adaSBN) {
+            System.out.println("Belum ada SBN yang tersedia.");
+            return;
+        }
+
+        System.out.print("Nama SBN yang akan dihapus: ");
+        String nama = input.nextLine();
+
+        Iterator<Investasi> iterator = listInvestasi.iterator();
+        while (iterator.hasNext()) {
+            Investasi i = iterator.next();
+            if (i instanceof SBN sbn && sbn.nama.equalsIgnoreCase(nama)) {
+                iterator.remove();
+                System.out.println("SBN berhasil dihapus.");
+                return;
+            }
+        }
+
+        System.out.println("Nama SBN tidak ditemukan.");
+    }
+
     static void tampilInvestasi() {
         System.out.println("\n== DAFTAR INVESTASI ==");
+        if (listInvestasi.isEmpty()) {
+            System.out.println("Belum ada investasi yang tersedia.");
+            return;
+        }
         for (Investasi i : listInvestasi) {
             i.tampilDetail();
         }
     }
 
+    // ========================= CUSTOMER MENU =========================
     static void customerMenu(Customer user) {
         while (true) {
             System.out.println("\n== MENU CUSTOMER ==\n1. Beli Investasi\n2. Portofolio\n3. Logout");
             String pilihan = input.nextLine();
+
             switch (pilihan) {
                 case "1" -> beliInvestasi(user);
                 case "2" -> lihatPortofolio(user);
@@ -229,62 +252,75 @@ static void adminSBN() {
         while (true) {
             System.out.println("\n== PILIH JENIS INVESTASI ==\n1. Saham\n2. SBN\n0. Kembali");
             String pilihan = input.nextLine();
+
             switch (pilihan) {
                 case "0" -> { return; }
                 case "1", "2" -> {
-                    if (pilihan.equals("1")) {
-                        System.out.println("\n== DAFTAR SAHAM ==");
-                        for (Investasi i : listInvestasi) {
-                            if (i instanceof Saham) i.tampilDetail();
-                        }
-                    } else {
-                        System.out.println("\n== DAFTAR SBN ==");
-                        for (Investasi i : listInvestasi) {
-                            if (i instanceof SBN) i.tampilDetail();
-                        }
-                    }
+                    if (pilihan.equals("1")) tampilkanSaham();
+                    else tampilkanSBN();
 
                     System.out.println("Ketik 0 untuk kembali.");
                     System.out.print("Masukkan nama/kode investasi: ");
                     String nama = input.nextLine();
                     if (nama.equals("0")) continue;
 
-                    boolean ditemukan = false;
-                    for (Investasi i : listInvestasi) {
-                        if (i instanceof Saham s && (s.nama.equalsIgnoreCase(nama) || s.kode.equalsIgnoreCase(nama))) {
-                            System.out.print("Nominal Pembelian: ");
-                            double nominal = Double.parseDouble(input.nextLine());
-                            int lembar = (int)(nominal / s.harga);
-                            if (lembar == 0) {
-                                System.out.println("Nominal terlalu kecil untuk membeli saham.");
-                                return;
-                            }
-                            user.sahamDimiliki.put(s.nama, user.sahamDimiliki.getOrDefault(s.nama, 0) + lembar);
-                            user.nominalSaham.put(s.nama, user.nominalSaham.getOrDefault(s.nama, 0.0) + (lembar * s.harga));
-                            ditemukan = true;
-                            break;
-                        } else if (i instanceof SBN sbn && sbn.nama.equalsIgnoreCase(nama)) {
-                            System.out.print("Nominal Pembelian: ");
-                            double nominal = Double.parseDouble(input.nextLine());
-                            if (nominal > sbn.kuotaNasional) {
-                                System.out.println("Nominal melebihi kuota nasional. Gagal membeli.");
-                                return;
-                            }
-                            user.sbnDimiliki.put(sbn.nama, user.sbnDimiliki.getOrDefault(sbn.nama, 0.0) + nominal);
-                            sbn.kuotaNasional -= nominal;
-                            ditemukan = true;
-                            break;
-                        }
-                    }
-
-                    if (!ditemukan) {
-                        System.out.println("Nama saham atau SBN tidak ditemukan. Silakan coba lagi.");
-                    } else {
-                        return;
-                    }
+                    beliInvestasiDetail(user, nama);
                 }
                 default -> System.out.println("Pilihan tidak valid. Silakan pilih 0-2.");
             }
+        }
+    }
+
+    static void tampilkanSaham() {
+        System.out.println("\n== DAFTAR SAHAM ==");
+        for (Investasi i : listInvestasi) {
+            if (i instanceof Saham) i.tampilDetail();
+        }
+    }
+
+    static void tampilkanSBN() {
+        System.out.println("\n== DAFTAR SBN ==");
+        for (Investasi i : listInvestasi) {
+            if (i instanceof SBN) i.tampilDetail();
+        }
+    }
+
+    static void beliInvestasiDetail(Customer user, String nama) {
+        boolean ditemukan = false;
+
+        for (Investasi i : listInvestasi) {
+            if (i instanceof Saham s && (s.nama.equalsIgnoreCase(nama) || s.kode.equalsIgnoreCase(nama))) {
+                System.out.print("Nominal Pembelian: ");
+                double nominal = Double.parseDouble(input.nextLine());
+                int lembar = (int)(nominal / s.harga);
+
+                if (lembar == 0) {
+                    System.out.println("Nominal terlalu kecil untuk membeli saham.");
+                    return;
+                }
+
+                user.sahamDimiliki.put(s.nama, user.sahamDimiliki.getOrDefault(s.nama, 0) + lembar);
+                user.nominalSaham.put(s.nama, user.nominalSaham.getOrDefault(s.nama, 0.0) + (lembar * s.harga));
+                ditemukan = true;
+                break;
+            } else if (i instanceof SBN sbn && sbn.nama.equalsIgnoreCase(nama)) {
+                System.out.print("Nominal Pembelian: ");
+                double nominal = Double.parseDouble(input.nextLine());
+
+                if (nominal > sbn.kuotaNasional) {
+                    System.out.println("Nominal melebihi kuota nasional. Gagal membeli.");
+                    return;
+                }
+
+                user.sbnDimiliki.put(sbn.nama, user.sbnDimiliki.getOrDefault(sbn.nama, 0.0) + nominal);
+                sbn.kuotaNasional -= nominal;
+                ditemukan = true;
+                break;
+            }
+        }
+
+        if (!ditemukan) {
+            System.out.println("Nama saham atau SBN tidak ditemukan. Silakan coba lagi.");
         }
     }
 

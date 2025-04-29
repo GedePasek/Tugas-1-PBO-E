@@ -42,3 +42,4 @@ InvestasiApp dapat dijalankan di **IDE INTELLIJ** dan pastikan kalian menginstal
 | User   | user     | user123    |
 
 ---
+![ArianaGrandeBarbiaminajGIF](https://github.com/user-attachments/assets/c232920d-5c5e-4a8d-be45-0931f980e595)

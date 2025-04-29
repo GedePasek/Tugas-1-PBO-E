@@ -113,3 +113,6 @@ Gambar di atas merupakan tampilan jika pengguna memilih opsi 1 untuk **membeli s
 Gambar di atas merupakan tampilan jika pengguna memilih opsi 2 untuk **membeli SBN**. Jika Penggguna salah memasukkan nama SBN yang tersedia, program akan menampilkan peringatan "**Nama saham atau SBN tidak ditemukan. Silakan coba lagi.**"
 
 ---
+
+### 8. Portofolio
+<img src="gambar/prosesBeliSBN.jpg" width="500">

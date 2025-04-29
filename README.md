@@ -32,3 +32,13 @@ cd InvestasiApp
 ---
 
 ## Cara Penggunaan Aplikasi
+InvestasiApp dapat dijalankan di **IDE INTELLIJ** dan pastikan kalian menginstal **JDK 11** Atau yang lebih baru.
+
+### Informasi Login
+
+| Role   | Username | Password   |
+|--------|----------|------------|
+| Admin  | admin    | admin123   |
+| User   | user     | user123    |
+
+---

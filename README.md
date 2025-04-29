@@ -76,4 +76,22 @@ Gambar di atas merupakan tampilan ketika pengguna menginput opsi 2 pada **Menu S
 
 <img src="gambar/hapusSaham.jpg" width="500">
 
-Gambar di atas merupakan tampilan ketika pengguna memilih opsi 3 di **Menu Saham**. Pengguna bisa menghapus saham yang tersedia dan ketika kode yang dimasukkan tidak ada di daftar sahamnya, maka akan muncul peringatan **Kode Saham Tidak Ditemukan** dan program akan otomatis kembali ke **Menu Saham**
+Gambar di atas merupakan tampilan ketika pengguna memilih opsi 3 di **Menu Saham**. Pengguna bisa menghapus saham yang tersedia dan ketika kode yang dimasukkan tidak ada di daftar sahamnya, maka akan muncul peringatan **Kode Saham Tidak Ditemukan** dan program akan otomatis kembali ke **Menu Saham**.
+
+<img src="gambar/tambahSBN.jpg" width="500">
+
+Gambar di atas merupakan tampilan Menu SBN. Terdapat 3 opsi pada menu tersebut, yaitu **Tambah SBN**, **Hapus SBN**, dan **Kembali**. Untuk menambah SBN, pengguna dapat memilih Opsi 1 dan mengisi data-data yang diminta oleh program.
+
+<img src="gambar/hapusSBN.jpg" width="500">
+
+Gambar di atas merupakan tampilan jika pengguna memilih opsi 2 untuk **menghapus SBN**. 
+
+<img src="gambar/DaftarInvestasi.jpg" width="500"> <img src="gambar/investasiKosong.jpg" width="500">
+
+Gambar di atas merupakan tampilan Daftar Investasi yang tersedia jika pengguna (admin) memilih opsi 3. Jika daftar investasi masih kosong, maka akan muncul pesan **"Belum ada investasi yang tersedia"**.
+
+<img src="gambar/loginUser.jpg" width="500"> <img src="gambar/menuCustomer.jpg" width="500">
+
+Gambar di atas merupakan tampilan User Login serta Menu Customer. Pada Menu Customer terdapat 3 opsi, yaitu **Beli Investasi**, **Portofolio**, dan **Logout**. Masukkan opsi 1 jika pengguna ingin membeli investasi dan akan muncul tampilan menu **Pilih Jenis Investasi**.
+
+

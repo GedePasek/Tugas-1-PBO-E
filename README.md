@@ -27,3 +27,8 @@ InvestasiApp adalah aplikasi berbasis Java console yang memungkinkan pengguna me
 ```bash
 git clone https://github.com/username/InvestasiApp.git
 cd InvestasiApp
+```
+
+---
+
+## Cara Penggunaan Aplikasi
